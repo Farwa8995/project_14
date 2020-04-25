@@ -1,0 +1,480 @@
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+	text-decoration:none;
+}
+.container{
+	width:100%;
+	position:relative;
+}
+.nav{
+	
+	width:100%;
+	height:20vh;
+	text-transform:uppercase;
+	
+}
+.nav h1{
+	text-align:center;
+	margin:2% 0%;
+	font-size:45px;
+	position:relative;
+	animation-name:navh1-ani;
+	animation-duration:2s;
+	animation-delay:4s;
+	animation-fill-mode:forwards;
+	opacity:0;
+}
+@keyframes navh1-ani{
+	from{top:-80%;}
+	to{top:2%;opacity:1; }
+	
+	
+	
+}
+.nav ul{
+	width:50%;
+	position:relative;
+	left:25%;
+	top:25%;
+	animation-name:ul-ani;
+	animation-duration:2s;
+	animation-delay:2s;
+	animation-fill-mode:forwards;
+	opacity:0;
+}
+.nav ul li{
+	float:left;
+	margin-left:7%;
+	font-size:22px;
+	
+    	
+}
+@keyframes ul-ani{
+	from{top:-80%;}
+	to{top:25%;opacity:1;}
+	
+	
+}
+
+
+.clear{
+	clear:both;
+}
+.nav ul li:hover{
+	transform:scale(1.5);
+	transition-duration:2s;
+	
+}
+.foodimg{
+	width:50%;
+	height:60vh;
+	margin-top:10vh;
+	background-image:url("bur.jpg");
+	background-size:100% 100%;
+	border:none;
+	animation-name:food-img-ani;
+	animation-duration:3s;
+	animation-fill-mode:forwards;
+	position:relative;
+	transition-property:all;
+	
+	
+	
+}
+@keyframes food-img-ani
+{
+from{left:-600px}
+to{left:0px;}	
+}
+
+.foodimg:hover{
+	transform:scale(0.9);
+	transition-duration:3s;
+}
+.food-order{
+	width:50%;
+	height:60vh;
+	top:34vh;
+	right:0;
+	text-align:center;
+	animation-name:food-order-ani;
+	animation-duration:3s;
+	animation-fill-mode:forwards;
+	animation-delay:2s;
+	position:absolute;
+	transition-property:all;
+	opacity:0;
+	
+}
+@keyframes food-order-ani
+{
+	from{right:-600px;}
+	to{right:0px;opacity:1}
+	
+	
+	
+}
+.food-order h1{
+	text-transform:uppercase;
+	font-size:50px;
+	margin:4% auto;
+	position:relative;
+	animation-name:order-h1;
+	animation-duration:2s;
+	animation-delay:3s;
+	animation-fill-mode:forwards;
+	opacity:0;
+	
+}
+
+@keyframes order-h1{
+	from{right:-600px;}
+	to{right:0;opacity:1}
+}
+
+.food-order p{
+	font-family:Ariel,Helvetica,sans-serif;
+	position:relative;
+	width:70%;
+	font-size:18px;
+	color:#323232;
+	margin:10% auto;
+	animation-name:order-p;
+	animation-duration:2s;
+	animation-delay:4s;
+	animation-fill-mode:forwards;
+	opacity:0;
+}
+@keyframes order-p{
+	from{right:-600px;}
+	to{right:0;opacity:1}
+}
+
+
+.food-order button{
+	width:20%;
+	height:10%;
+	border-radius:20px;
+	border:none;
+	outline-style:none;
+	text-transform:uppercase;
+	font-size:20px;
+	background-image:linear-gradient(to left, teal, transparent);
+	animation-name:order-btn;
+	animation-duration:2s;
+	animation-delay:5s;
+	animation-fill-mode:forwards;
+	opacity:0;
+	position:relative;
+	
+}
+@keyframes order-btn{
+	from{right:-600px;}
+	to{right:0px;opacity:1;}
+}
+
+.products{
+	background-image:url('images.jpg');
+	background-size:100% 100%;
+	height:100vh;
+	width:100%;
+	border:1px solid black;
+	position:relative;
+	
+}
+
+.pic1
+{
+	position:absolute;
+    height:30%;
+    width:30%;
+    top:10%; 
+    left:7%; 
+	border-radius:20px;
+	animation-name:pic11;
+	animation-duration:5s;
+	animation-delay:3s;
+	animation-fill-mode:forwards;
+	opacity:0;
+	
+
+
+
+}
+.pic1:hover{
+	transform:rotatey(25deg);
+	transition-duration:2s;
+	
+	
+}
+@keyframes pic11{
+	from{left:-400px;}
+	to{left:117px;opacity:1;}
+}
+.h11{
+	position:absolute;
+	left:12%;
+	top:40.5%;
+    color:red;	
+	animation-name:btn11;
+	animation-duration:5s;
+	animation-delay:3s;
+	animation-fill-mode:forwards;
+	opacity:0;
+}
+@keyframes pic11{
+	from{left:-400px;}
+	to{left:117px;opacity:1;}
+}
+
+.p11{
+	position:absolute;
+	font-size:20px;
+	left:9%;
+	top:50%;
+	color:teal;	
+	border-radius:20px;
+	animation-name:p11;
+	animation-duration:5s;
+	animation-delay:3s;
+	animation-fill-mode:forwards;
+	opacity:0;
+}
+@keyframes p11{
+	from{left:-400px;}
+	to{left:117px;opacity:1;}
+}
+
+.btn{
+	position:absolute;
+	top:64%;
+	left:17%;
+	height:50px;
+	width:120px;
+	border-radius:20px;
+	border:none;
+	outline-style:none;
+	background-image:linear-gradient(to right, teal, transparent);
+    animation-name:btn11;
+	animation-duration:5s;
+	animation-delay:3s;
+	animation-fill-mode:forwards;
+	opacity:0;
+}
+@keyframes btn11{
+	from{left:-400px;}
+	to{left:200px;opacity:1;}
+}
+.btn:hover{
+	box-shadow:5px -5px 6px 5px teal;
+	background:transparent;
+	color:pink;
+}
+
+.a
+{
+	position:absolute;
+    height:30%;
+    width:25%;
+    top:10%; 
+    left:40%; 
+	border-radius:20px;
+	animation-name:a1;
+	animation-duration:2s;
+	animation-delay:3s;
+	animation-fill-mode:forwards;
+	opacity:0;
+}
+@keyframes a1{
+	from{left:-400px;}
+	to{left:40%;opacity:1;}
+}
+
+.a:hover{
+	transform:rotatey(20deg);
+	transition-duration:2s;
+}
+
+.h1{
+	position:absolute;
+	top:42%;
+	left:45%;
+	color:red;
+	animation-name:h1-ani;
+	animation-duration:2s;
+	animation-delay:3s;
+	animation-fill-mode:forwards;
+	opacity:0;
+}
+@keyframes h1-ani{
+	from{left:-1200px}
+	to{left:45%; opacity:1;}
+}
+
+.p1{
+	position:absolute;
+	top:50%;
+	left:40%;
+	font-size:20px;
+	color:teal;
+	/* background: yellow; */
+	animation-name:p1-ani;
+	animation-duration:2s;
+	animation-delay:3s;
+	animation-fill-mode:forwards;
+	opacity:0;
+}
+@keyframes p1-ani{
+	from{top:-1200px}
+	to{top:50%; opacity:1;}
+}
+
+
+
+.b1{
+	position:absolute;
+	top:64%;
+	left:50%;
+	height:50px;
+	width:120px;
+	border-radius:20px;
+	border:none;
+	outline-style:none;
+	background-image:linear-gradient(to right, teal, transparent);
+	animation-name:b1-ani;
+	animation-duration:2s;
+	animation-delay:3s;
+	animation-fill-mode:forwards;
+	opacity:0;
+	transition-property:all;
+	
+	
+}
+.b1:hover{
+	box-shadow:5px -6px 5px 5px pink;
+	color:blue;
+	background:transparent;
+	
+	
+	
+}
+
+
+@keyframes b1-ani{
+	from{left:-1200px;}
+	to{left:50%; opacity:1;}
+	
+	
+}
+.b{
+    position:absolute;
+    height:30%;
+    width:25%;
+    top:10%; 
+    left:70%; 
+	border-radius:20px;
+	animation-name:b-ani;
+	animation-duration:2s;
+	animation-delay:2s;
+	animation-fill-mode:forwards;
+	opacity:0;
+}
+.b:hover{
+	transform:rotatey(30deg);
+	transition-duration:2s;
+	
+	
+	
+}
+@keyframes b-ani{
+	from{left:-50%;}
+	to{left:70%;opacity:1;}
+	
+	
+}
+.h2{
+	position:absolute;
+	top:43%;
+	left:79%;
+	color:red;
+	animation-name:h2-ani;
+	animation-duration:2s;
+	animation-delay:3s;
+	animation-fill-mode:forwards;
+	opacity:0;
+}
+@keyframes h2-ani{
+	from{left:-1200px}
+	to{left:79%; opacity:1;}
+}
+
+.p2{
+	position:absolute;
+	top:50%;
+	left:70%;
+	font-size:20px;
+	color:teal;
+	animation-name:p2-ani;
+	animation-duration:2s;
+	animation-delay:3s;
+	animation-fill-mode:forwards;
+	opacity:0;
+}
+@keyframes p2-ani{
+	from{top:-1200px}
+	to{top:50%; opacity:1;}
+}
+
+
+
+
+.b2{
+	position:absolute;
+	top:64%;
+	left:80%;
+	height:50px;
+	width:120px;
+	border-radius:20px;
+	border:none;
+	outline-style:none;
+	background-image:linear-gradient(to right, teal, transparent);
+	animation-name:b2-ani;
+	animation-duration:2s;
+	animation-delay:3s;
+	animation-fill-mode:forwards;
+	opacity:0;
+	transition-property:all;
+	
+	
+}
+.b2:hover{
+	box-shadow:5px -6px 5px 5px pink;
+	color:blue;
+	background:transparent;
+	
+	
+	
+}
+
+
+@keyframes b2-ani{
+	from{left:-1200px;}
+	to{left:80%; opacity:1;}
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
